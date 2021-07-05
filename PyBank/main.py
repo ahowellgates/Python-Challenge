@@ -24,7 +24,7 @@ with open(pybank_csv, 'r') as csvfile:
     for row in csvreader:
         months += 1
 
-            Print(months)
+    Print(months)
 
 
 
