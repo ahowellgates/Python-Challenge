@@ -18,7 +18,7 @@ with open(pypoll_csv, 'r') as csvfile:
         candidate_name = row['Candidate']
         votes.append(candidate_name)
 
-    print(len(votes))
+    print("Total Votes:",len(votes))
 
     candidate_list = ["Khan", "Correy","Li","O'Tooley"]
     vote_max = 0
@@ -30,8 +30,8 @@ with open(pypoll_csv, 'r') as csvfile:
             vote_max = vote_count
             vote_winner = candidate
 
-        print(vote_count)
-        print(vote_percentage)
+        print(candidate,vote_count,vote_percentage)
+        
 
 print("Winner:",vote_winner)
 
