@@ -26,13 +26,13 @@ with open(pypoll_csv, 'r') as csvfile:
     vote_winner = ""
     for candidate in candidate_list:
         vote_count = votes.count(candidate)
-        vote_percentage = (vote_count/len(votes))*100
+        vote_percentage = (vote_count/len(votes))
         if vote_count > vote_max:
             vote_max = vote_count
             vote_winner = candidate
 
-        print(candidate,vote_count,vote_percentage,file=open("output.txt", "a"))
-        print(candidate,vote_count,vote_percentage)
+        print(candidate,vote_count,format(vote_percentage,".2%"),file=open("output.txt", "a"))
+        print(candidate,vote_count,format(vote_percentage,".2%"))
 
 print("Winner:",vote_winner,file=open("output.txt", "a"))
 print("Winner:",vote_winner)
