@@ -6,20 +6,38 @@ import csv
 pypoll_csv = os.path.join('PyPoll','Resources','election_data.csv')
 
 with open(pypoll_csv, 'r') as csvfile:
-
-    # Split the data on commas
+    
     csvreader = csv.DictReader(csvfile, delimiter=',')
 
     #rows = list(csvreader)
     #totalrows = len(rows)
 
-votes = []
+    votes = []
 
-for row in csvreader:
-     candidate_name = row['Candidate']
-     votes.append(candidate_name)
+    for row in csvreader:
+        candidate_name = row['Candidate']
+        votes.append(candidate_name)
 
-print(len(votes))
+    print(len(votes))
+
+    candidate_list = ["Khan", "Correy","Li","O'Tooley"]
+    vote_max = 0
+    vote_winner = ""
+    for candidate in candidate_list:
+        vote_count = votes.count(candidate)
+        vote_percentage = (vote_count/len(votes))*100
+        if vote_count > vote_max:
+            vote_max = vote_count
+            vote_winner = candidate
+
+        print(vote_count)
+        print(vote_percentage)
+
+print("Winner:",vote_winner)
+
+
+
+
 
 
 
