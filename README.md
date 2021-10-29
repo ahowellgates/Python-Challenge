@@ -4,6 +4,7 @@
 
 Well... you've made it!
 
+<<<<<<< HEAD
 It's time to put away the Excel sheet and join the big leagues. Welcome to the world of programming with Python. In this homework assignment, you'll be using the concepts you've learned to complete the **two** Python Challenges, PyBank and PyPoll.
 
 Both of these challenges encompasses a real-world situation where your newfound Python scripting skills can come in handy. These challenges are far from easy so expect some hard work ahead!
@@ -115,3 +116,8 @@ Both of these challenges encompasses a real-world situation where your newfound 
   - - -
 
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+=======
+PyBank: runs an analysis on financial information and returns data such as total months of information, total revenue, avergage change, and precentage increases and decreases. Results print to both the terminal and a txt file.
+
+PyPoll: runs an analysis on election results including total votes, precentage of vote for each candidate, and the election winner. Results print to both the terminal and a txt file.
+>>>>>>> bfec6f40e72cc13fa683ad29f194efb87ce6ee0c
